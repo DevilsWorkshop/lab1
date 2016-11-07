@@ -1,0 +1,22 @@
+body{
+	
+	
+}
+
+.form-signin{
+	width: 330px;
+	margin: 0 auto;
+}
+
+.form-group {
+	width: 330px;
+	margin: 0 auto;
+
+}
+
+.form-group a, h2{
+	
+	text-decoration: none;
+	display: inline-block;
+	
+}
