@@ -1,3 +1,9 @@
 language: java
+services:
+  - mysql
 jdk: oraclejdk8
+before_script:
+  - mysql -e 'create database sun_aggr;'
 script: mvn clean test site
+
+
