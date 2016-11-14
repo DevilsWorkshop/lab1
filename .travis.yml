@@ -3,6 +3,7 @@ services:
   - mysql
 jdk: oraclejdk8
 before_script:
+  - git describe > version.txt
   - mysql -e 'create database sun_aggr;'
 script: mvn clean test site
 
