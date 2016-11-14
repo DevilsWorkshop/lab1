@@ -3,8 +3,9 @@ services:
   - mysql
 sudo: required
 jdk: oraclejdk8
-before_script:
+before_install:
   - chmod +x /src/main/scripts/calculate-version.sh
+before_script:
   - mysql -u root -e 'create database sun_aggr;'
   - mysqladmin -u root password 311295
 script: mvn clean test site
