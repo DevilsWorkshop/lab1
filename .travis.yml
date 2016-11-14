@@ -5,8 +5,9 @@ sudo: required
 jdk: oraclejdk8
 before_script:
   - git describe > version.txt
-  - mysqladmin -u root password 311295
   - mysql -u root -e 'create database sun_aggr;'
+  - mysqladmin -u root password 311295
+- mysql -u root -e "GRANT ALL ON stockmarket.* TO 'makler'@'localhost';"
 script: mvn clean test site
 
 
