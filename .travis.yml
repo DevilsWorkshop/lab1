@@ -1,6 +1,7 @@
 language: java
 services:
   - mysql
+sudo: required
 jdk: oraclejdk8
 before_script:
   - git describe > version.txt
