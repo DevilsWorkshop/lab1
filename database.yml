@@ -1,0 +1,5 @@
+sun_aggr:
+  adapter: mysql2
+  database: sun_aggr
+  username: travis
+  encoding: utf8
