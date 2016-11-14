@@ -4,7 +4,7 @@ services:
 sudo: required
 jdk: oraclejdk8
 before_script:
-  - git describe > version.txt
+ # - git describe > version.txt
   - mysql -u root -e 'create database sun_aggr;'
   - mysqladmin -u root password 311295
 script: mvn clean test site

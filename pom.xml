@@ -8,7 +8,7 @@
     <artifactId>aggregator</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-<!-- generate-sources>
+<generate-sources>
      <plugins>
 	<plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -28,7 +28,7 @@
                 </configuration>
             </plugin>
 	</plugins>
-    </generate-sources-->
+    </generate-sources>
 
 
     <build>
